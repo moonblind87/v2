@@ -1,5 +1,3 @@
 FROM rustdesk/rustdesk-server:latest
 
-RUN chmod +x /usr/local/bin/hbbr
-
-CMD ["hbbr"]
+CMD ["hbbs", "-r", "your-app-name.up.railway.app:21117"]
